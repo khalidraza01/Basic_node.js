@@ -4,6 +4,8 @@ const db = require("./db.js");
 const person = require("./models/Person");
 const bodyParser=require('body-parser');
 const khalid=require('./notes.js')
+require('dotenv').config();
+ const PORT=process.env.PORT || 3000;
 app.use(bodyParser.json())
 
 app.get("/", function (req, res) {
@@ -34,6 +36,8 @@ app.use('/person', Personrouter);
 const notesRouter=require('./models/Router/notesRouter.js');
 app.use('/khalid',notesRouter);
 
-app.listen(3000, () => {
+
+
+app.listen(PORT, () => {
   console.log("listing port no 3000 ");
 });
