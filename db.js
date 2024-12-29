@@ -6,8 +6,8 @@ let mongoose=require('mongoose');
 
 //const mongoURL='mongodb://localhost:27017/khalidDeatails' //replace hotel u can
 //const mongoURL="mongodb+srv://razamdkhalid90:khalid@cluster0.huw7o.mongodb.net/?retryWrites=true&w=majority&tls=true"
-const mongoURL=process.env.MONGODB_URL
-// const mongoURL=process.env.MONGODB_URL_local
+//const mongoURL=process.env.MONGODB_URL
+ const mongoURL=process.env.MONGODB_URL_local
 
 // setup MongoDB connection
 
