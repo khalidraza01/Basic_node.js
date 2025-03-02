@@ -31,8 +31,8 @@ const Personrouter=require('./models/Router/PersonRouter.js');
 const notesRouter=require('./models/Router/notesRouter.js');
 const Person = require("./models/Person");
 
-app.use('/person',localAuthMiddleware, Personrouter);
-app.use('/khalid',notesRouter);
+app.use('/person', Personrouter);
+app.use('/khalid' ,localAuthMiddleware, notesRouter);
 
 
 
